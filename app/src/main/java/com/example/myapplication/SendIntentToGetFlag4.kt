@@ -17,7 +17,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.core.net.toUri
 
 @Composable
-fun SendIntent(modifier: Modifier = Modifier) {
+fun SendIntentToGetFlag4(modifier: Modifier = Modifier) {
 
     val context = LocalContext.current
 

@@ -17,7 +17,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.core.net.toUri
 
 @Composable
-fun SendIntent(modifier: Modifier = Modifier) {
+fun SendIntentToGetFlag3(modifier: Modifier = Modifier) {
 
     val context = LocalContext.current
 
@@ -31,11 +31,13 @@ fun SendIntent(modifier: Modifier = Modifier) {
             onClick = {
 
                 val intent = Intent().apply {
+
                     component = ComponentName(
                         "io.hextree.attacksurface",
-                        "io.hextree.attacksurface.activities.Flag4Activity"
+                        "io.hextree.attacksurface.activities.Flag3Activity"
                     )
-                    action = "GET_FLAG_ACTION"
+                    action="io.hextree.action.GIVE_FLAG"
+                    data = "https://app.hextree.io/map/android".toUri()
                 }
 
                 context.startActivity(intent)
@@ -46,21 +48,6 @@ fun SendIntent(modifier: Modifier = Modifier) {
 
             Text("send Intent")
 
-        }
-
-        Button(
-            onClick = {
-                val intent = Intent().apply {
-                    component = ComponentName(
-                        "io.hextree.attacksurface",
-                        "io.hextree.attacksurface.activities.Flag4Activity"
-                    )
-                }
-                context.startActivity(intent)
-            },
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("Open Flag4Activity")
         }
     }
 }
