@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
 
-                    SendIntent(
+                    SendIntentToGetFlag5(
                         modifier = Modifier.padding(innerPadding)
                     )
 
