@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
-class HextreeMainActivity : ComponentActivity() {
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,7 +24,7 @@ class HextreeMainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
 
-                    SendIntentToGetFlag8(
+                    SendIntentToGetFlag12(
                         modifier = Modifier.padding(innerPadding)
                     )
 

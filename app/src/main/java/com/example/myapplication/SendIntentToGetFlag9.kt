@@ -16,7 +16,7 @@ import androidx.compose.ui.platform.LocalContext
 import android.widget.Toast
 
 @Composable
-fun SendIntentToGetFlag8(
+fun SendIntentToGetFlag9(
     modifier: Modifier = Modifier
 ) {
 
@@ -52,7 +52,7 @@ fun SendIntentToGetFlag8(
                 intent.component =
                     ComponentName(
                         "io.hextree.attacksurface",
-                        "io.hextree.attacksurface.activities.Flag8Activity"
+                        "io.hextree.attacksurface.activities.Flag9Activity"
                     )
 
                 launcher.launch(intent)
