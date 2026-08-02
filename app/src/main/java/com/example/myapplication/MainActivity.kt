@@ -24,13 +24,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
 
-                    SendIntentToGetFlag12(
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Flag22(modifier = Modifier.padding(innerPadding))
 
                 }
             }
         }
     }
 }
-
