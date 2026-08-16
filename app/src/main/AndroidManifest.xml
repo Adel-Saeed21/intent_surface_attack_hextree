@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -29,6 +28,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="io.hextree.attacksurface.MUTATE_ME" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -37,8 +37,25 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="io.hextree.attacksurface.ATTACK_ME" />
-                <category android:name="android.intent.category.DEFAULT"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".DeepLinkActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="hex"
+                    android:host="token" />
+            </intent-filter>
+
         </activity>
     </application>
 
