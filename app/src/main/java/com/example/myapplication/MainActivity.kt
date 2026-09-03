@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
 
-                    Flag22(modifier = Modifier.padding(innerPadding))
+                    StartService24(modifier = Modifier.padding(innerPadding))
 
                 }
             }
